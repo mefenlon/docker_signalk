@@ -3,7 +3,7 @@ services:
   signalk-server:
     image: cr.signalk.io/signalk/signalk-server:latest
     container_name: signalk-server
-    restart: unless-stopped
+    restart: always
 #   ----------------------
     network_mode: host 
 #    network_mode: bridge    # (1/3) If bridge-mode is used, then comment line abobe (host) and select/add needed ports settings
